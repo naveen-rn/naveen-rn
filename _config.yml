@@ -40,8 +40,10 @@ links:
     url: /featured
   - title: Categories
     url: /categories
+  - title: Research
+    url: /research    
   - title: About
-    url: /hossain-mohd-faysal
+    url: /naveen-rn
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Houston
