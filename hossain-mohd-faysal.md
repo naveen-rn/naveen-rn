@@ -1,13 +1,13 @@
 ---
 layout: page
-permalink: /hossain-mohd-faysal/index.html
-title: HOSSAIN MOHAMMAD FAYSAL
-tags: [Hossain, Mohd, Faysal, hmfaysal]
+permalink: /naveen-rn/index.html
+title: Naveen N Ravi
+tags: [Naveen, Ravi, Nana]
 image:
-  feature: Hossain-Mohd-Faysal.jpg
+  feature: naveen-rn.jpg
 ---
 
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
+  <img src="{{ site.url }}/images/naveen-rn.jpg" alt="Naveen Namashivayam">
 
 
 My name is **Hossain Mohd. Faysal**, and this is my personal blog.  
