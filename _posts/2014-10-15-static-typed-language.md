@@ -65,12 +65,13 @@ But it is not always possible even for statically typed languages to verify the 
 
 ```
 public class Test {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         List <Integer> numbers = new ArrayList <Integer> ();
         numbers.add(1);
         addToList(numbers);     //String is added to the list
         int total = numbers.get(0) + numbers.get(1);
     }
+
     private static void addToList(List myList) {
         myList.add("Hello");
     }
