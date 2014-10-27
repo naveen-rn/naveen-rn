@@ -22,6 +22,7 @@ A process of analyzing a program to ensure that the types of expressions are con
 We can develop our discussion based on the following Fortran code,
 
 ```
+
 program simple
 
     integer     :: a(4)
@@ -31,6 +32,7 @@ program simple
     print *, a
 
 end program simple
+
 ```
 
 
@@ -39,16 +41,23 @@ The program now will print only 98 instead of 98.99. So, this example shows that
 Consider a sample Haskell code;
 
 ```
+
 a = [1, 1, 1, 1]
+
 main = do
+
     print list
+
 ```
 
 And a Ruby code;
 
 ```
+
 a = Arrays.new(1, 1, 1, 1)
+
 print a
+
 ```
 
 Though it might look the same in both Haskell and Ruby, they are statically and dynamically typed, respectively. Haskell uses the traditional Hindley-Milner (HM) polymorphic type system. The most important property of HM type system is its ability to deduce the most general type of a given program without the need for any type annotations or other hints supplied by the programmer. OCaml is yet another static typed programming language of this sort.
@@ -56,31 +65,49 @@ Though it might look the same in both Haskell and Ruby, they are statically and 
 This type checking is also one of the important features of Haskell, which sets it apart from other programming languages. A type signature of the Haskell program will look something like this;
 
 ```
+
 functionName :: arg1Type -> arg2Type -> arg3Type -> ....... -> argNType
+
 ```
 
 Hence, the above example shows how a language can be statically typed without explicitly specifying the type of the object. Usually the compiler determines and assigns the type to object/variable. These languages also perform the job of typecasting the variable/object to a different compatible type for a valid assignment. This allows us to have some flexibility with static type languages. For example, the code below will compile in Java:
 
 ```
+
 float num = 5.5;
+
 num = 3;
+
 ```
 
 But it is not always possible even for statically typed languages to verify the type at compile time and display errors if there is a wrong assignment. Sometimes, compiler cannot infer the right type of an object or variable at compile time and an executable can be generated with incorrect type assignments.
 
+
 ```
+
 public class Test {
-public static void main(String args[]) {
-    List <Integer> numbers = new ArrayList <Integer> ();
-    numbers.add(1);
-    addToList(numbers);     //String is added to the list
-    int total = numbers.get(0) + numbers.get(1);
+
+    public static void main(String args[]) {
+
+        List <Integer> numbers = new ArrayList <Integer> ();
+    
+        numbers.add(1);
+    
+        addToList(numbers);     //String is added to the list
+    
+        int total = numbers.get(0) + numbers.get(1);
+
+    }
+
+
+
+    private static void addToList(List myList) {
+        
+        myList.add("Hello");
+
+        }   
 }
 
-private static void addToList(List myList) {
-    myList.add("Hello");
-}   
-}
 ```
 
 The above code compiles perfectly. But, as we can see the string "Hello" is added to list of "only" integers, which is a wrong type assignment. As expected, the code throws an exception at runtime while trying to add the two list elements. 
