@@ -81,7 +81,7 @@ num = 3;
 
 But it is not always possible even for statically typed languages to verify the type at compile time and display errors if there is a wrong assignment. Sometimes, compiler cannot infer the right type of an object or variable at compile time and an executable can be generated with incorrect type assignments.
 
-bash```
+```bash
 
 public class Test {
 
