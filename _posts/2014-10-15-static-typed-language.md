@@ -20,7 +20,6 @@ to work, when programming in a statically typed language, we specify the type fo
 A process of analyzing a program to ensure that the types of expressions are consistent throughout the program is called as Type Checking. A programming language is said to be statically typed, if the type of the variable or an object is known during the compile time. The general examples of statically typed languages are C, C++, C#, Java, Fortran, Haskell, Perl and Scala. 
 
 We can develop our discussion based on the following Fortran code,
-
 ```
 program simple
     integer     :: a(4)
@@ -28,6 +27,7 @@ program simple
     print *, a
 end program simple
 ```
+
 
 The program now will print only 98 instead of 98.99. So, this example shows that usually in statically typed language the type of the variable or object should be known during compile time and it can't be modified during runtime. It is usually believed that in order to achieve this, we need to specify the type for each variable or object in code as we have mentioned the variable "a" to be of type integer in the above code.
 
