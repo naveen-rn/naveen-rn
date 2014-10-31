@@ -22,7 +22,9 @@ A process of analyzing a program to ensure that the types of expressions are con
 We can develop our discussion based on the following Fortran code,
 
 bash```
+
 program simple
+
     integer     :: a(4)
     
     a = 98.99
