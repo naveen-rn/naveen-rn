@@ -23,11 +23,11 @@ We can develop our discussion based on the following Fortran code,
 
     program simple
 
-    integer     :: a(4)
+        integer     :: a(4)
     
-    a = 98.99
+        a = 98.99
     
-    print *, a
+        print *, a
 
     end program simple
 
