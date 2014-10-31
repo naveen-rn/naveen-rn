@@ -90,3 +90,6 @@ The above code compiles perfectly. But, as we can see the string "Hello" is adde
 Statically type languages thus help us avoid a lot of mistakes in the code by type checking information at compile time. But, it will be incorrect to assume that a compiled code of a language always has correct typing assignments just because it is statically typed language. We should always test for typing, even in such languages to ensure that the code performs the expected operations.
 
 From, the above discussion we can conclude that type checking in a statically typed language checks the type of the variables and objects at compile time. But, this does not necessarily identify all the errors during compilation. And for the static type checking to work, there is no standard rule that a programmer should specify the each variable or object type in the code.
+
+
+P.S; This article was written along with Amita(amitakulkarni8@gmail.com).
