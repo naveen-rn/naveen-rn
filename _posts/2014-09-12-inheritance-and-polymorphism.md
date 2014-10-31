@@ -14,6 +14,8 @@ featured: true
 published: true
 ---
 
+"Inheritance is essential to support polymorphism."
+
 In Object Oriented Programming, Polymorphism is defined as the ability of an object to be able to take multiple forms. Inheritance is one of the ways of reusing code, by obtaining all the code of the base class, without the duplication of code. In that way you can extend your object only where it is needed and leave the rest of implementation untouched. Polymorphism through inheritance comes very natural because you are guaranteed that the method exist. So the only thing the compiler is left to check, is if in the tree of classes at some point, there exists the object that is expected by the method. But this is just a way to apply the concept of polymorphism, not what it is actually means. 
 
 Polymorphism can also be implemented in some languages by simply applying the method on a received object. The compiler doesn't check if the object truly has such a method because it doesn't know the type which is known only at the runtime. So at runtime it checks whether there exist such a method and simply calls it with the implementation that each object has provided. In that way the burden of correctness verification lies heavily on the side of the caller. 
