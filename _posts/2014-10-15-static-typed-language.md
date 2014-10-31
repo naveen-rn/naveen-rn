@@ -35,74 +35,55 @@ The program now will print only 98 instead of 98.99. So, this example shows that
 
 Consider a sample Haskell code;
 
-bash```
+    a = [1, 1, 1, 1]
 
-a = [1, 1, 1, 1]
+    main = do
 
-main = do
-
-    print list
-
-```
+        print list
 
 And a Ruby code;
 
-bash```
+    a = Arrays.new(1, 1, 1, 1)
 
-a = Arrays.new(1, 1, 1, 1)
+    print a
 
-print a
-
-```
 
 Though it might look the same in both Haskell and Ruby, they are statically and dynamically typed, respectively. Haskell uses the traditional Hindley-Milner (HM) polymorphic type system. The most important property of HM type system is its ability to deduce the most general type of a given program without the need for any type annotations or other hints supplied by the programmer. OCaml is yet another static typed programming language of this sort.
 
 This type checking is also one of the important features of Haskell, which sets it apart from other programming languages. A type signature of the Haskell program will look something like this;
 
-bash```
-
-functionName :: arg1Type -> arg2Type -> arg3Type -> ....... -> argNType
-
-```
+    functionName :: arg1Type -> arg2Type -> arg3Type -> ....... -> argNType
 
 Hence, the above example shows how a language can be statically typed without explicitly specifying the type of the object. Usually the compiler determines and assigns the type to object/variable. These languages also perform the job of typecasting the variable/object to a different compatible type for a valid assignment. This allows us to have some flexibility with static type languages. For example, the code below will compile in Java:
 
-bash```
+    float num = 5.5;
 
-float num = 5.5;
-
-num = 3;
-
-```
+    num = 3;
 
 But it is not always possible even for statically typed languages to verify the type at compile time and display errors if there is a wrong assignment. Sometimes, compiler cannot infer the right type of an object or variable at compile time and an executable can be generated with incorrect type assignments.
 
-```bash
+    public class Test {
 
-public class Test {
+        public static void main(String args[]) {
 
-    public static void main(String args[]) {
-
-        List <Integer> numbers = new ArrayList <Integer> ();
-    
-        numbers.add(1);
-    
-        addToList(numbers);     //String is added to the list
-    
-        int total = numbers.get(0) + numbers.get(1);
-
-    }
-
-
-
-    private static void addToList(List myList) {
+            List <Integer> numbers = new ArrayList <Integer> ();
         
-        myList.add("Hello");
+            numbers.add(1);
+        
+            addToList(numbers);     //String is added to the list
+        
+            int total = numbers.get(0) + numbers.get(1);
 
-        }   
-}
+        }
 
-```
+
+
+        private static void addToList(List myList) {
+            
+            myList.add("Hello");
+
+            }   
+    }
 
 The above code compiles perfectly. But, as we can see the string "Hello" is added to list of "only" integers, which is a wrong type assignment. As expected, the code throws an exception at runtime while trying to add the two list elements. 
 
