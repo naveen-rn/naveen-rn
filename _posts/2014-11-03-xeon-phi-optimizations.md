@@ -60,6 +60,7 @@ Programmers should take care to effectively utilize this large SIMD operations a
 3. Making use of Directives and Pragmas are some of the ways through which we can optimize the code. 
 
 **Array Notation**
+
 The below loop can be expressed in Fortran 90 with the following notation:
 
     for (i = 0; i < n; i++)
@@ -77,6 +78,7 @@ or
 This has been utilized in Intel Cilk plus(parallel programming library) and we can use this in vectorizing the following loop:
 
 **Elemental Function**
+
 An elemental function can considered as a template in C++. We can utilize this in vectorizing the following loop:
 
     __attribute__(vector (optional clauses))void MyVecMult(double *a, double *b, double *c)
@@ -95,6 +97,7 @@ or as
 
 
 **Directives and Pragmas**
+
 Making use of #pragma ivdep or #pragma simd can also help us in vectorizing the code easily. But make sure to use them appropriately. 
 
 The above steps in vectorizing and tuning the application are the basic steps to see a visible optimization. This [link](https://software.intel.com/en-us/articles/optimization-and-performance-tuning-for-intel-xeon-phi-coprocessors-part-1-optimization) provides a brief instruction on the same.
