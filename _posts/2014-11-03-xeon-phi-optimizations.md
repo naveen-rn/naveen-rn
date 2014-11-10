@@ -15,10 +15,10 @@ published: true
 
 Vector operations can be considered as a single instruction executed on a multiple data. In general we can provide a crude example on how this vector operations look like;
 Considered the following loop:
-```
+
     for (i = 0; i < n; i++)
         a[i] = b[i] + c[i]
-```
+
 A scalar operation will look like this:
 ```
     execute this loop 'n' times
